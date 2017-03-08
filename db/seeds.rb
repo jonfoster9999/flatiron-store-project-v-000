@@ -4,6 +4,13 @@
     inventory: Faker::Number.number(2), 
     price: Faker::Number.number(4)
   )
+
+  User.create(
+  	email: Faker::Internet.email,
+  	password: "password"
+  	)
+
+
   Category.create(title: Faker::Commerce.department)
 end
 
